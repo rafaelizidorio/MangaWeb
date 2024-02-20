@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+
+    <header>
+        <link rel="stylesheet" href="https://rsms.me/inter/inter.css">
+        <link rel="stylesheet" type="text/css" href="../pages/manga.css">
+        <meta charset="utf-8">
+        <title>MangÁ</title>
+    </header>
+
+    <body>
+
+        <div class="topbar">
+            <div class="topbar-left">
+                <img src="../imgs/topbar-logo.svg" class="logo" alt="MangÁ">
+                <div class="discord">
+                    <div class="discord-img">
+                        <img src="../imgs/discord.svg" alt="Logo do Discord">
+                    </div>
+                    <p>Discord</p>
+                </div>
+                <div class="apoio">
+                    <img src="../imgs/donate-heart.svg" alt="Donate">
+                    <p>Seja um apoiador</p>
+                </div>
+            </div>
+            <div class="topbar-right">
+                <div class="colecao">
+                    <img src="../imgs/bookmark.svg" alt="Minha lista">
+                    <p>Minha lista</p>
+                </div>
+                <div class="perfil">
+                    <img src="../imgs/perfil.svg" class="perfil-foto" alt="Foto de perfil">
+                    <p>Rafael Izidorio</p>
+                    <img src="../imgs/dropdown.svg" class="dropdown" alt="Dropdown">
+                </div>
+            </div>
+        </div>
+
+        <div class="topbarmobile">
+            <div class="topbar-left">
+                <div class="openmenu" onclick="menuSelector()">
+                    <img src="../imgs/menu.svg" alt="Menu">
+                </div>
+            </div>
+            <div class="topbar-right">
+                <img src="../imgs/topbar-logo.svg" class="logo" alt="MangÁ">
+            </div>            
+        </div>
+
+        <div class="menumobile" id="menuselector">
+            <ul>
+                <li>
+                    <div class="closemenu" onclick="menuSelector()">
+                        <img src="../imgs/close.svg" alt="Fechar">
+                    </div>
+                </li>
+                <li>
+                    <div class="discord-img">
+                        <img src="../imgs/discord.svg" alt="Logo do Discord">
+                    </div>
+                    <p>Discord</p>
+                </li>
+                <li>
+                    <img src="../imgs/donate-heart.svg" alt="Donate">
+                    <p>Seja um apoiador</p>
+                </li>
+                <li>
+                    <img src="../imgs/bookmark.svg" alt="Minha lista">
+                    <p>Minha lista</p>
+                </li>
+                <li>
+                    <img src="../imgs/perfil.svg" class="perfil-foto" alt="Foto de perfil">
+                    <p>Rafael Izidorio</p>
+                    <img src="../imgs/dropdown.svg" class="dropdown" alt="Dropdown">
+                </li>
+            </ul>
+        </div>
+
+        <div class="hero">
+
+            <div class="banner"></div>
+            <div class="manga-info">
+                <div class="tag">Ação, Comédia.</div>
+                <div class="title">Lycoris Recoil</div>
+                <div class="desc">Takina Inoue, uma estudante do ensino médio que trabalha como membro de uma força-tarefa feminina de assassinos e espiões conhecida como "Lycoris" treinada para...</div>
+            </div>
+            <div class="manga-buttons">
+                <div class="feedback">
+                    <img src="../imgs/staryellow.svg" alt="">
+                    <p>4.5/5</p>
+                </div>
+                <div class="save">
+                    <img src="../imgs/save.svg" alt="">
+                    <p>Salvar</p>
+                </div>
+                <div class="dots">
+                    <img src="../imgs/dots.svg" alt="">
+                </div>
+            </div>
+
+            <div class="content">
+                <div class="content-aba">
+                    <div class="content-aba-list">Capítulos</div>
+                    <div class="content-aba-list">Personagens</div>
+                    <div class="content-aba-list">Autor(a)</div>
+                    <div class="content-aba-list">Semelhantes</div>
+                </div>
+                <div class="content-input">
+                    <div class="search">
+                        <img src="../imgs/bx-search.svg" alt="Pesquisa">
+                        <input type="search" placeholder="O que está procurando?">
+                    </div>
+                    <div class="aviso">
+                        <img src="../imgs/time.svg" alt="Relógio">
+                        <p>Novo capítulo Sexta-Feira</p>
+                    </div>
+                </div>
+                <div class="content-list">
+                    <ul>
+                        <li>
+                            <img src="../imgs/check.svg" alt=""><p>Capítulo 1</p>
+                        </li>
+                        <li>
+                            <img src="../imgs/dots-horizontal.svg" alt=""><p>Capítulo 2</p>
+                        </li>
+                        <li>
+                            <img src="../imgs/dots-horizontal.svg" alt=""><p>Capítulo 3</p>
+                        </li>
+                        <li>
+                            <img src="../imgs/dots-horizontal.svg" alt=""><p>Capítulo 4</p>
+                        </li>
+                        <li>
+                            <img src="../imgs/dots-horizontal.svg" alt=""><p>Capítulo 5</p>
+                        </li>
+                        <li>
+                            <img src="../imgs/dots-horizontal.svg" alt=""><p>Capítulo 6</p>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+        </div>
+
+        <script type="Text/Javascript" src="../javascript/manga.js"></script>
+        <script type="Text/Javascript" src="../javascript/script.js"></script>
+    </body>
+</html>

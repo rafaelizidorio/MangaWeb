@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+
+    <header>
+        <link rel="stylesheet" href="https://rsms.me/inter/inter.css">
+        <link rel="stylesheet" type="text/css" href="style.css">
+        <meta charset="utf-8">
+        <title>MangÁ</title>
+    </header>
+
+    <body>
+
+        <div class="topbar">
+            <div class="topbar-left">
+                <img src="imgs/topbar-logo.svg" class="logo" alt="MangÁ">
+                <div class="discord">
+                    <div class="discord-img">
+                        <img src="imgs/discord.svg" alt="Logo do Discord">
+                    </div>
+                    <p>Discord</p>
+                </div>
+                <div class="apoio">
+                    <img src="imgs/donate-heart.svg" alt="Donate">
+                    <p>Seja um apoiador</p>
+                </div>
+            </div>
+            <div class="topbar-right">
+                <div class="colecao">
+                    <img src="imgs/bookmark.svg" alt="Minha lista">
+                    <p>Minha lista</p>
+                </div>
+                <div class="perfil">
+                    <img src="imgs/perfil.svg" class="perfil-foto" alt="Foto de perfil">
+                    <p>Rafael Izidorio</p>
+                    <img src="imgs/dropdown.svg" class="dropdown" alt="Dropdown">
+                </div>
+            </div>
+        </div>
+
+        <div class="topbarmobile">
+            <div class="topbar-left">
+                <div class="openmenu" onclick="menuSelector()">
+                    <img src="imgs/menu.svg" alt="Menu">
+                </div>
+            </div>
+            <div class="topbar-right">
+                <img src="imgs/topbar-logo.svg" class="logo" alt="MangÁ">
+            </div>            
+        </div>
+
+        <div class="menumobile" id="menuselector">
+            <ul>
+                <li>
+                    <div class="closemenu" onclick="menuSelector()">
+                        <img src="imgs/close.svg" alt="Fechar">
+                    </div>
+                </li>
+                <li>
+                    <div class="discord-img">
+                        <img src="imgs/discord.svg" alt="Logo do Discord">
+                    </div>
+                    <p>Discord</p>
+                </li>
+                <li>
+                    <img src="imgs/donate-heart.svg" alt="Donate">
+                    <p>Seja um apoiador</p>
+                </li>
+                <li>
+                    <img src="imgs/bookmark.svg" alt="Minha lista">
+                    <p>Minha lista</p>
+                </li>
+                <li>
+                    <img src="imgs/perfil.svg" class="perfil-foto" alt="Foto de perfil">
+                    <p>Rafael Izidorio</p>
+                    <img src="imgs/dropdown.svg" class="dropdown" alt="Dropdown">
+                </li>
+            </ul>
+        </div>
+        
+        <div class="hero">
+            <div class="hero-imgs">
+                <img src="imgs/楽.svg" alt="Logo">
+                <img src="imgs/Detail-bg.svg" alt="Detalhes do fundo">
+            </div>
+            <div class="hero-text">
+                <h2>O que você quer ler hoje?</h2>
+                <p>Navegue por uma ampla seleção de títulos, desde clássicos atemporais até lançamentos recentes, tudo disponível para leitura instantânea. Sem complicações, sem planos.</p>
+            </div>
+            <div class="hero-inputs">
+                <button>
+                    <img src="imgs/magic-wand.svg" alt="Magic">
+                    <p>Me surpreenda!</p>
+                </button>
+                <div class="search">
+                    <img src="imgs/bx-search.svg" alt="Pesquisa">
+                    <input type="search" placeholder="O que está procurando?">
+                </div>
+            </div>
+            </div>
+        </div>
+
+        <div class="invisivel" style="display: none;">
+
+            <div class="manga">        
+                <img src="" alt="">
+                <p class="tag">---</p>
+                <div class="title">---</div>
+                <div class="feedback">
+                    <div class="stars">
+                        <img src="imgs/star.svg" alt="Estrela do Feedback">
+                        <img src="imgs/star.svg" alt="Estrela do Feedback">
+                        <img src="imgs/star.svg" alt="Estrela do Feedback">
+                        <img src="imgs/star.svg" alt="Estrela do Feedback">
+                        <img src="imgs/star.svg" alt="Estrela do Feedback">
+                        <p class="nota">---</p>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="listagem">
+
+            <div class="listagem-nav">
+                <div class="listagem-nav-esq">
+                    <div class="buttons-list">Recomendados</div>
+                    <div class="buttons-list">Novos capítulos</div>
+                    <div class="buttons-list">Próximos lançamentos</div>
+                </div>
+                <div class="listagem-nav-dir">
+                    <div class="dir-gr">
+                        <img src="imgs/grid-box.svg" alt="Grid Box">
+                    </div>
+                    <div class="dir-ls">
+                        <img src="imgs/grid-list.svg" alt="Grid List">
+                    </div>
+                </div>
+            </div>
+
+            <div class="listagem-manga">
+
+            </div>
+
+        </div>
+
+    <script type="Text/Javascript" src="javascript/manga.js"></script>
+    <script type="Text/Javascript" src="javascript/script.js"></script>
+    </body>
+</html>

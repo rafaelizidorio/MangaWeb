@@ -1,0 +1,462 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Inter;
+    box-sizing: border-box;
+}
+
+body {
+    height: auto;
+    padding-bottom: 4rem;
+    width: 100vw;
+    background: linear-gradient(180deg, #1D1924, #0A0A12);
+    overflow-x: hidden;
+}
+
+.topbar{
+    height: 5rem;
+    width: 100vw;
+    padding: 1rem 11.3rem 1rem 11.3rem;
+
+    display: flex;
+    justify-content: space-between;
+
+    border-bottom: 1px solid rgba(255, 255, 255, 0.15);
+    background: rgba(24, 21, 31, 0.50);
+    backdrop-filter: blur(40px);
+
+    position: fixed;
+    top: 0;
+    z-index: 5;
+}
+
+.topbar .topbar-left,
+.topbar .topbar-right,
+.topbarmobile .topbar-left,
+.topbarmobile .topbar-right{
+    display: flex;
+}
+
+.topbar .topbar-left .logo{
+    width: 3rem;
+    height: 3rem;
+
+    margin-right: 3rem;
+}
+
+.topbar .topbar-left .discord{
+    display: flex;
+    align-items: center;
+    margin-right: 1rem;
+    height: 3rem;
+
+    padding: 0.5rem 0.75rem 0.5rem 0.75rem;
+    border-radius: 0.25rem;
+    border: 1px solid rgba(255, 255, 255, 0.10);
+    background: rgba(255, 255, 255, 0.05);
+    box-shadow: 0px 0px 48px 8px rgba(0, 0, 0, 0.25);
+}
+
+.topbar .topbar-left .discord img{
+    width: 1.5rem;
+    height: 1.5rem;
+    margin-right: 0.75rem;
+}
+
+.topbar .topbar-left .discord p{
+    color: #FFFFFF;
+    font-size: 1rem;
+    font-weight: 500;
+}
+
+.topbar .topbar-left .apoio{
+    display: flex;
+    align-items: center;
+    margin-right: 1rem;
+    height: 3rem;
+
+    padding: 0.5rem 0.75rem 0.5rem 0.75rem;
+    border-radius: 0.25rem;
+    border: 1px solid rgba(255, 213, 65, 0.25);
+    background: rgba(255, 213, 65, 0.05);
+    box-shadow: 0px 0px 48px 8px rgba(0, 0, 0, 0.25);
+}
+
+.topbar .topbar-left .apoio img{
+    width: 1.5rem;
+    height: 1.5rem;
+    margin-right: 0.75rem;
+}
+
+.topbar .topbar-left .apoio p{
+    color: #FFD541;
+    font-size: 1rem;
+    font-weight: 500;
+}
+
+.topbar .topbar-right .colecao{
+    display: flex;
+    align-items: center;
+    margin-right: 1rem;
+    height: 3rem;
+
+    padding: 0.5rem 0.75rem 0.5rem 0.75rem;
+    border-radius: 0.25rem;
+    border: 1px solid rgba(255, 255, 255, 0.10);
+    background: rgba(255, 255, 255, 0.05);
+    box-shadow: 0px 0px 48px 8px rgba(0, 0, 0, 0.25);
+}
+
+.topbar .topbar-right .colecao img{
+    width: 1.5rem;
+    height: 1.5rem;
+    margin-right: 0.75rem;
+}
+
+.topbar .topbar-right .colecao p{
+    color: #FFFFFF;
+    font-size: 1rem;
+}
+
+.topbar .topbar-right .perfil{
+    display: flex;
+    align-items: center;
+    margin-right: 1rem;
+    height: 3rem;
+
+    padding: 0.5rem 0.75rem 0.5rem 0.75rem;
+    border-radius: 0.25rem;
+    border: 1px solid rgba(255, 255, 255, 0.10);
+    background: rgba(255, 255, 255, 0.05);
+    box-shadow: 0px 0px 48px 8px rgba(0, 0, 0, 0.25);
+}
+
+.topbar .topbar-right .perfil .perfil-foto{
+    width: 1.5rem;
+    height: 1.5rem;
+    margin-right: 0.75rem;
+}
+
+.topbar .topbar-right .perfil p{
+    color: #FFFFFF;
+    font-size: 1rem;
+    margin-right: 0.75rem;
+}
+
+.topbar .topbar-right .perfil .dropdown{
+    width: 1.5rem;
+    height: 1.5rem;
+}
+
+.topbarmobile{
+    height: 5rem;
+    width: 100vw;
+    padding: 1rem 1.5rem 1rem 1.5rem;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+    border-bottom: 1px solid rgba(255, 255, 255, 0.15);
+    background: rgba(24, 21, 31, 0.50);
+    backdrop-filter: blur(40px);
+
+    position: fixed;
+    top: 0;
+    z-index: 4;
+
+    display: none;
+}
+
+.topbarmobile .openmenu{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 1rem;
+    height: 3rem;
+    width: 3rem;
+
+    padding: 0.5rem 0.75rem 0.5rem 0.75rem;
+    border-radius: 0.25rem;
+    border: 1px solid rgba(255, 255, 255, 0.10);
+    background: rgba(255, 255, 255, 0.05);
+    box-shadow: 0px 0px 48px 8px rgba(0, 0, 0, 0.25);
+}
+
+.menumobile{
+    width: 100vw;
+    height: 100vh;
+
+    position: fixed;
+    top: 0;
+    z-index: 4;
+
+    background-color: #1D1924;
+    display: none;
+}
+
+.menumobile ul li{
+    width: 100vw;
+    padding: 1rem 1.5rem 1rem 1.5rem;
+
+    display: flex;
+    flex-direction: row;
+
+    color: #f2f2f2;
+    gap: 1rem;
+
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.menumobile ul li:last-child{
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.menumobile ul li p{
+    width: auto;
+    display: flex;
+    align-items: center;
+}
+
+.menumobile ul li .closemenu{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 1rem;
+    height: 3rem;
+    width: 3rem;
+
+    padding: 0.5rem 0.75rem 0.5rem 0.75rem;
+    border-radius: 0.25rem;
+    border: 1px solid rgba(255, 255, 255, 0.10);
+    background: rgba(255, 255, 255, 0.05);
+    box-shadow: 0px 0px 48px 8px rgba(0, 0, 0, 0.25);    
+}
+
+.hero{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    margin-top: 7rem;
+}
+
+.banner{
+    width: 64.5625rem;
+    height: 15.625rem;
+    border-radius: 0.5rem;
+
+    background-image: url('../imgs/banners/lycoris-banner.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 50%;
+}
+
+.manga-info{
+    color: #f2f2f2;
+    width: 31.6rem;
+    text-align: center;
+    margin-top: 2rem;
+}
+
+.manga-info .tag{
+    color: #C8C8C9;
+    font-size: 1rem;
+}
+
+.manga-info .title{
+    color: #FFF;
+    font-size: 1.875rem;
+    font-weight: 600;
+    margin-top: 2rem;
+}
+
+.manga-info .desc{
+    color: #c8c8c9;
+    font-size: 1rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 150%;
+    margin-top: 1rem;
+}
+
+.manga-buttons{
+    display: flex;
+    gap: 1rem;
+    margin-top: 2rem;
+}
+
+.manga-buttons .feedback,
+.manga-buttons .save,
+.manga-buttons .dots{
+    color: #f2f2f2;
+    display: flex;
+    padding: 0.75rem 1rem;
+    align-items: center;
+    gap: 0.625rem;
+
+    border-radius: 0.25rem;
+    background: rgba(255, 255, 255, 0.05);
+    border: 1px solid rgba(255, 255, 255, 0.15);
+}
+
+.manga-buttons .dots{
+    width: 3rem;
+    height: 3rem;
+    justify-content: center;
+}
+
+.content{
+    width: 64.6rem;
+    margin-top: 3rem;
+}
+
+.content .content-aba{
+    display: flex;
+    flex-direction: row;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.15);
+}
+
+.content .content-aba .content-aba-list{
+    display: flex;
+    padding: 0.75rem 1.5rem;
+    justify-content: center;
+    align-items: center;
+
+    box-shadow: 0px 0px 48px 8px rgba(0, 0, 0, 0.25);
+    color: #c8c8c9;
+
+    transition: all 0.2s;
+}
+
+.content .content-aba .content-aba-list:hover{
+    background-color: #1D1924;
+    color: #ffffff;
+}
+
+.content .content-aba .content-aba-list:first-child{
+    border-bottom: 3px solid var(--Cor-principal, #8571FF);
+    background-color: rgba(133, 113, 255, 0.15);
+    color: #fff;    
+}
+
+.content .content-input{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    
+    height: 3rem;
+    margin-top: 2rem;
+}
+
+.content .content-input .search{
+    border-radius: 0.25rem;
+    border: 1px solid rgba(255, 255, 255, 0.10);
+    opacity: 0.8;
+    background: rgba(255, 255, 255, 0.05);
+    box-shadow: 0px 0px 48px 8px rgba(0, 0, 0, 0.25);
+    color: #f2f2f2;
+    font-size: 1rem;
+
+    display: flex;
+    flex-direction: row;
+
+    padding: 0.75rem;
+
+    transition: all 0.5s;
+
+    width: 25rem;
+}
+
+.content .content-input .search:focus-within{
+    border: 1px solid #7F6DF5;
+    box-shadow: 0px 0px 48px 8px rgba(127, 109, 245, 0.15);
+}
+
+.content .content-input .search img{
+    margin: 0rem 0.75rem 0rem 0rem;
+}
+
+.content .content-input .search input{
+    border: 1px solid rgba(255, 255, 255, 0);
+    background: rgba(255, 255, 255, 0);
+    color: #f2f2f2;
+    font-size: 1rem;
+}
+
+.content .content-input .search input:focus{
+    outline: none;
+}
+
+.content .content-input .aviso{
+    display: flex;
+    flex-direction: row;
+    color: #f2f2f2;
+
+    padding: 0.75rem 1rem;
+    align-items: center;
+    gap: 0.625rem;
+
+    width: 17rem;
+    height: 3rem;
+    border-radius: 0.25rem;
+    background: rgba(255, 255, 255, 0.05);
+    border: 1px solid rgba(255, 255, 255, 0.15);
+
+}
+
+.content .content-list{
+    margin-top: 2rem;
+}
+
+.content .content-list ul li{
+    display: flex;
+    padding: 1rem;
+    align-items: center;
+    gap: 1rem;
+    color: #f2f2f2;
+}
+
+.content .content-list ul li:hover{
+    background-color: #1D1924;
+    color: #ffffff;
+}
+
+.content .content-list ul li:nth-child(3){
+    border-left: 2px solid var(--Cor-principal, #8571FF);
+    background: rgba(133, 113, 255, 0.15);
+    box-shadow: 0px 0px 48px 8px rgba(0, 0, 0, 0.25);
+}
+
+.content .content-list ul li:first-child p{
+    opacity: 0.7;
+}
+
+
+@media (max-device-width: 800px) {
+    
+    .topbar{
+        display: none;
+    }
+
+    .topbarmobile{
+        display: flex;
+    }
+
+    .hero{
+        margin-top: 7rem;
+    }
+
+    .banner{
+        width: 100%;  
+    }
+
+    .content{
+        width: 100vw;
+        padding: 3rem 2rem 0rem 2rem;
+    }
+    
+
+
+}
